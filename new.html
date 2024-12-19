@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charchit Julaniya - Resume</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="fade-in">Charchit Julaniya</h1>
+            <p class="fade-in">Innovative Software Developer | Full-Stack Development | Problem Solver</p>
+            <div class="contact-info fade-in">
+                <p>📍 Indore, India</p>
+                <p>📞 +91 xxxxxxxxxx</p>
+                <p>📧 xxxxxxxxxxx@gmail.com</p>
+                <p><a href="https://www.linkedin.com/in/charchit-julaniya-09213524b" target="_blank">LinkedIn Profile</a></p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#activities">Activities</a></li>
+        </ul>
+    </nav>
+
+    <section id="summary" class="section">
+        <h2>Summary</h2>
+        <p>As a passionate and dedicated Software Developer, I specialize in full-stack development, with strong expertise in technologies like HTML, CSS, JavaScript, Python, and React. I am highly motivated by the challenge of creating scalable, efficient, and user-friendly web applications that solve real-world problems. My experience spans both front-end and back-end development, where I focus on writing clean, maintainable code while ensuring seamless integration between different layers of the application. In addition to my technical skills, I am a quick learner, a team player, and an effective communicator, always striving to contribute to the success of the team and project. I am actively seeking opportunities to work in a dynamic environment where I can apply my skills and continue to grow professionally, especially in a full-stack or software engineering role that allows me to work on impactful projects.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>HTML Proficiency:</strong> Strong understanding of semantic HTML, structure, and accessibility best practices.</li>
+            <li><strong>CSS Expertise:</strong> Advanced knowledge of CSS for styling and layout, including Flexbox and Grid.</li>
+            <li><strong>JavaScript Proficiency:</strong> Experience in building interactive websites with JavaScript, including working with frameworks like React.</li>
+            <li><strong>Python Programming:</strong> Skilled in Python for back-end development, scripting, and data analysis.</li>
+            <li><strong>Sprint Planning:</strong> Knowledge of Agile methodologies and sprint planning for efficient project execution.</li>
+            <li><strong>Team Collaboration:</strong> Experience working in teams, with a focus on collaborative development and knowledge sharing.</li>
+            <li><strong>Spanish (Intermediate):</strong> Able to communicate in Spanish at an intermediate level.</li>
+            <li><strong>Effective Communication:</strong> Strong verbal and written communication skills for clear interaction with teams and clients.</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <h3>Full Stack Developer (04/2024 - Current)</h3>
+        <p>Insta Dot Analytics, Indore, India</p>
+        <ul>
+            <li>Developed and maintained user-facing webpages using HTML, CSS, JavaScript, and Python.</li>
+            <li>Managed both back-end and front-end aspects of development processes.</li>
+            <li>Collaborated with back-end developers to integrate user interface elements into websites.</li>
+            <li>Built responsive websites compatible with mobile devices using media queries.</li>
+        </ul>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <h3>Acropolis Institute of Technology and Research</h3>
+        <p>Bachelor in Technology: Computer Science and Engineering (Expected in 06/2026)</p>
+        <h3>Advanced Kids Academy</h3>
+        <p>High School Graduation (05/2022)</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <h3>Personal Portfolio Website</h3>
+        <p>Developed a responsive and visually appealing portfolio website using HTML, CSS, and JavaScript. Integrated smooth animations and a modern design to showcase my projects and skills.</p>
+        
+        <h3>Weather App</h3>
+        <p>Created a weather application using JavaScript and APIs to provide real-time weather information based on user input. The app features dynamic updates and a clean, user-friendly interface.</p>
+    </section>
+
+    <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <ul>
+            <li><strong>Full-Stack Web Development Certificate</strong> - FreeCodeCamp</li>
+            <li><strong>Python for Data Science and AI</strong> - Coursera (IBM)</li>
+            <li><strong>JavaScript Algorithms and Data Structures</strong> - FreeCodeCamp</li>
+        </ul>
+    </section>
+
+    <section id="activities" class="section">
+        <h2>Activities and Honors</h2>
+        <ul>
+            <li>Music/Singing</li>
+            <li>Painting</li>
+            <li>Skating/Swimming</li>
+            <li>Traveling</li>
+            <li>State Level Skating</li>
+            <li>NGO Works</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Charchit Julaniya. All rights reserved.</p>
+    </footer>
+
+<script>
+    // Detect scroll direction and change background color
+let lastScrollTop = 0;
+const body = document.body;
+
+window.addEventListener('scroll', function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down: Change background to a darker burgundy
+        body.style.transition = "background-color 2s ease-in-out";
+        body.style.background = "#f0c6c3";  // Dark Burgundy color when scrolling down
+    } else {
+        // Scrolling up: Return to the original background color
+        body.style.transition = "background-color  2s ease-in-out";
+        body.style.background = "#9b1b30";  // Light Burgundy color when scrolling up
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+}, false);
+
+</script>
+</body>
+</html>
